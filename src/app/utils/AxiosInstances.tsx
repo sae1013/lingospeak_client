@@ -1,9 +1,9 @@
-import axios from "axios";
+import Axios from "axios";
 
 // flask python instance
-export const server1Instance = axios.create({
+export const axios = Axios.create({
   baseURL: "http://localhost:5000/",
-  timeout: 5000,
+  timeout: 60 * 1000,
   headers: {
     "Content-Type": "application/json",
   },
